@@ -1,0 +1,17 @@
+
+# Private environment settings
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Temporary and log files
+*.log
+.DS_Store
+Thumbs.db
+
+# Local database backups
+*.sql
