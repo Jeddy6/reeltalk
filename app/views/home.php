@@ -870,13 +870,11 @@ $postInitial = strtoupper(
             <?php endif; ?>
 
             <?php if (!empty($post['image'])): ?>
-                <img
-                    class="post-image"
-                    src="<?= chirplyEscape($post['image']) ?>"
-                    alt="Photo attached to post"
-                    loading="lazy"
-                >
-            <?php endif; ?>
+    <img class="post-image"
+         src="/<?= chirplyEscape($post['image']) ?>"
+         alt="Photo attached to post"
+         loading="lazy">
+<?php endif; ?>
 
             <?php if (!empty($post['video'])): ?>
                 <video
@@ -885,7 +883,7 @@ $postInitial = strtoupper(
                     preload="metadata"
                 >
                     <source
-                        src="<?= chirplyEscape($post['video']) ?>"
+                       src="/<?= chirplyEscape($post['video']) ?>"
                         type="<?= str_ends_with(
                             strtolower($post['video']),
                             '.webm'

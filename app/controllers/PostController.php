@@ -156,7 +156,7 @@ class PostController
             return $result;
         }
 
-        $uploadDirectory = dirname(__DIR__, 2) . '/public/uploads/posts';
+        $uploadDirectory = dirname(__DIR__, 2) . '/uploads/posts';
 
         if (
             !is_dir($uploadDirectory) &&
@@ -209,7 +209,7 @@ class PostController
             return;
         }
 
-        $fullPath = dirname(__DIR__, 2) . '/public/' . $relativePath;
+        $fullPath = dirname(__DIR__, 2) . '/' . $relativePath;
 
         if (is_file($fullPath)) {
             unlink($fullPath);

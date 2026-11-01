@@ -10,7 +10,7 @@ function registerEscape($value)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - ReelTalk</title>
+    <title>Create Account - Chirply</title>
 
     <style>
         * { box-sizing: border-box; }
@@ -104,7 +104,7 @@ function registerEscape($value)
 </head>
 <body>
     <main class="card">
-        <h1>ReelTalk</h1>
+        <h1>Chirply</h1>
         <p class="subtitle">Join the movie conversation.</p>
 
         <?php if (!empty($error)): ?>

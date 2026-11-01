@@ -13,7 +13,7 @@ unset($_SESSION['success_message']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In - ReelTalk</title>
+    <title>Log In - Chirply</title>
 
     <style>
         * { box-sizing: border-box; }
@@ -109,7 +109,7 @@ unset($_SESSION['success_message']);
 </head>
 <body>
     <main class="card">
-        <h1>ReelTalk</h1>
+        <h1>Chirply</h1>
         <p class="subtitle">Welcome back, movie lover.</p>
 
         <?php if ($successMessage !== ''): ?>
