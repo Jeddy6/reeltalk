@@ -1039,13 +1039,20 @@ $profileId = (int) ($profileUser['id'] ?? 0);
 
 
                 <?php if ($isPostOwner): ?>
-                    <form
-                        class="js-confirm-delete"
-                        action="index.php?action=delete_post"
-                        method="POST"
-                        data-modal-title="Delete post?"
-                        data-modal-message="Are you sure you want to delete this post? Once deleted, it may not be recoverable."
-                    >
+                    
+<form
+    class="js-confirm-delete"
+    action="index.php?action=delete_post"
+    method="POST"
+    data-modal-title="Delete post?"
+    data-modal-message="Are you sure you want to delete this post? Once deleted, it may not be recoverable."
+>
+    <input
+        type="hidden"
+        name="csrf_token"
+        value="<?= chirplyEscape($csrfToken) ?>"
+    >
+
                         
 <input
     type="hidden"

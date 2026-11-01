@@ -1,17 +1,31 @@
 
-# Private environment settings
+# Private database configuration
+/config/database.php
+
+# Uploaded user content
+/uploads/posts/*
+/uploads/profiles/*
+!/uploads/posts/.gitkeep
+!/uploads/profiles/.gitkeep
+
+# Local public uploads
+/public/uploads/posts/*
+/public/uploads/profiles/*
+
+# Local and temporary files
 .env
 .env.*
 !.env.example
-
-# Dependencies
-/vendor/
-/node_modules/
-
-# Temporary and log files
 *.log
 .DS_Store
 Thumbs.db
 
-# Local database backups
-*.sql
+# IDE and operating-system files
+.vscode/
+.idea/
+
+# Backups and archives
+*.zip
+*.bak
+*_backup.php
+*backup*

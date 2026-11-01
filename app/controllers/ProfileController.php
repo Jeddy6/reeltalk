@@ -200,7 +200,7 @@ class ProfileController
                 exit;
             }
 
-            $uploadDirectory = __DIR__ . '/../../public/uploads/profiles';
+            $uploadDirectory = dirname(__DIR__, 2) . '/uploads/profiles';
 
             if (
                 !is_dir($uploadDirectory) &&
